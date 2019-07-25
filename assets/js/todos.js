@@ -18,7 +18,9 @@ $("input[type='text']").keypress(function(){
     $("ul").append("<li><span><i class='fa fa-trash'></i></span>" + todoText + "</li>")
   }
 })
-
+$(".fa-plus").click(function(){
+  $("input[type='text']").fadeToggle()
+})
 
 // All of this code can be replaced with .toggleClass
 //   if($(this).css("color")=== "rgb(128, 128, 128)"){
